@@ -300,7 +300,13 @@
       
         
           
-            
+            <p>给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。</p>
+<p>说明：</p>
+<p>你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？</p>
+<p>示例 1:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: [2,2,1]</span><br><span class="line">输出: 1</span><br></pre></td></tr></table></figure></p>
+<p>示例 2:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: [4,1,2,1,2]</span><br><span class="line">输出: 4</span><br></pre></td></tr></table></figure></p>
+<p>答案:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * @param &#123;number[]&#125; nums</span><br><span class="line"> * @<span class="built_in">return</span> &#123;number&#125;</span><br><span class="line"> */</span><br><span class="line">var singleNumber = <span class="keyword">function</span>(nums) &#123;</span><br><span class="line">    <span class="built_in">let</span> value=nums[0];</span><br><span class="line">        <span class="keyword">for</span> (<span class="built_in">let</span> i = 1; i &lt; nums.length ; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            value = value ^ nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> value;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+
           
         
       
